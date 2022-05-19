@@ -1,0 +1,12 @@
+<%- include('header') -%>
+
+this is the edit page
+
+<form action="/edit/<%=index%>?_method=PUT" method="POST">
+<input type="text" name='name' placeholder="name" value="<%=explore.name%>">
+<input type="text" name="desc" placeholder="description" value="<%=explore.desc%>">
+ <input type="submit" value="Make Changes">
+
+</form>
+
+<%- include('footer') -%>
